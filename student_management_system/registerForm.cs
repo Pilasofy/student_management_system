@@ -94,9 +94,9 @@ namespace student_management_system
                 {
                     MessageBox.Show("All fields should be filled out", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else if (fullName.Text.Length < 3 || fullName.Text.Length > 20)
+                else if (fullName.Text.Length < 4 || fullName.Text.Length > 20)
                 {
-                    MessageBox.Show("Username must be between 3 and 20 characters", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Username must be between 4 and 20 characters", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (!IsValidUsername(fullName.Text))
                 {
@@ -145,7 +145,7 @@ namespace student_management_system
                     }
                     else
                     {
-                        MessageBox.Show("Please make sure both password fields contain the same value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("The entered passwords do not match. Please make sure both password fields contain the same value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
