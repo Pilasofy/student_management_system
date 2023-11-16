@@ -145,7 +145,7 @@ namespace student_management_system
                     }
                     else
                     {
-                        MessageBox.Show("The entered passwords do not match. Please make sure both password fields contain the same value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Please make sure both password fields contain the same value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
