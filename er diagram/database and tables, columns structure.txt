@@ -1,0 +1,54 @@
+Database	(1)			=	student management system
+Tables	(6)			=	users, students, teachers, courses, student_courses, teacher_courses
+
+	(USERS) Table.
+Columns for users			=
+
+user_id, 
+user_full_name, 
+user_email, 
+user_password, 
+user_role
+
+	(STUDENTS) Table.
+Columns for students		=
+
+student_id, 
+student_gender, 
+student_date_of_birth, 
+student_school, 
+student_contact_number, 
+student_home_address, 
+student_status
+
+	(TEACHERS) Table.
+Columns for teachers		=
+
+teacher_id, 
+teacher_full_name, 
+teacher_email, 
+teacher_education, 
+teacher_contact_number, 
+teacher_status
+
+	(COURSES) Table.
+Columns for courses		=
+
+course_id, 
+course_name, 
+course_duration, 
+course_fees, 
+course_type, 
+course_status
+
+	*(STUDENT_COURSES) Table.
+Columns for student_courses		=
+
+student_id, 
+course_id
+
+	*(TEACHER_COURSES) Table.
+Columns for teacher_courses		=
+
+teacher_id, 
+course_id

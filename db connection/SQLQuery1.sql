@@ -1,0 +1,3 @@
+use student_ms;
+
+CREATE TABLE users (    user_id INT PRIMARY KEY IDENTITY,    user_full_name VARCHAR(25) UNIQUE NOT NULL,    user_email VARCHAR(25) UNIQUE NOT NULL,    user_password VARCHAR(25) NOT NULL,    user_role VARCHAR(7) NOT NULL,	created_at DATETIME DEFAULT GETDATE(),    updated_at DATETIME DEFAULT GETDATE());INSERT INTO users (user_full_name, user_email, user_password, user_role, created_at, updated_at) VALUES ('Mohamed Kiyas', 'darkdoor77@gmail.com', 'Dark_Door-77', 'Admin', GETDATE(), GETDATE());SELECT * FROM users;
